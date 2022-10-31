@@ -3,7 +3,6 @@ const app= express();
 
 app.get('/',(req,res)=>{
     res.send({hey : 'the fuck you want here'})
-    res.send('Currently in production.........')
 });
 
 
