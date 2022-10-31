@@ -2,7 +2,7 @@ const express= require('express');
 const app= express();
 
 app.get('/',(req,res)=>{
-    res.send('I love you Venus ')
+    res.send({hey : 'the fuck you want here'})
 });
 
 
