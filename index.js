@@ -7,7 +7,9 @@ const keys=require('./config/keys')
 
 
 
+
 require('./models/User')
+require('./models/Survey')
 require('./services/passport');
 
 
@@ -29,6 +31,7 @@ app.use(passport.session());
 
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
+require('./routes/surveyRoutes')(app);
 
 if (process.env.NODE_ENV === 'production'){
     //TODO:Express will serve up production assets
